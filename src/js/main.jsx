@@ -9,10 +9,15 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import 'primeicons/primeicons.css';
+import { RouterProvider } from 'react-router';
+import router from '../routes';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
+
